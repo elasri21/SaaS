@@ -1,0 +1,40 @@
+.button {
+    display: block;
+    width: fit-content;
+    text-align: center;
+    padding: 15px 30px;
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: 500;
+    border: 2px solid transparent;
+    &.bg-dark {
+        background-color: $title-c;
+        color: $white;
+        border-color: $title-c;
+        &:hover {
+            color: $title-c;
+            background-color: $white;
+        }
+    }
+    &.bg-blue {
+        background-color: $blue;
+        color: $white;
+        border-color: $blue;
+        &:hover {
+            color: $blue;
+            background-color: $white;
+        }
+    }
+    &.without-bg {
+        color: $text-c;
+        &:hover {
+            color: $blue;
+        }
+    }
+    &.rad-4 {
+        border-radius: 4px;
+    }
+    &.rad-30 {
+        border-radius: 30px;
+    }
+}
